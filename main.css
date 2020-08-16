@@ -13,6 +13,7 @@ h2 {
 	color: #eb8b10;
 	font-size: 4rem;
 	font-family: 'Lobster', cursive;
+	text-align: center;
 }
 
 p {
@@ -618,6 +619,95 @@ header::before {
 	height: 5px;
 }
 
+@media(max-width: 1300px) {
+	section {
+		padding: 20px;
+	}
+
+	#skills > div > div:last-of-type {
+		padding-top: 20px;
+	}
+
+	.parent-card {
+		width: 30%;
+		min-width: 300px;
+	}
+
+	.slider {
+		height: 420px;
+	}
+}
+
+@media(max-width: 1100px) {
+	.card-container {
+		flex-direction: column;
+	}
+
+	#parents > div {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 10px;
+	}
+
+	.parent-card {
+		margin: 10px;
+	}
+
+	#banner {
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	#banner img {
+		margin: 60px;
+	}
+
+	#skills > div {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#skills > div > div {
+		margin-top: 20px;
+	}
+
+	.slider {
+		width: 80%;
+		height: 330px;
+	}
+
+	#about .img {
+		background-position: -200px -100px;
+	}
+}
+
+@media(max-width: 860px) {
+	html {
+		font-size: 9px;
+	}
+
+	#skills > div > div {
+	    width: 100%;
+	}
+
+	#skills > div > div:last-of-type p + p {
+	    margin-top: 28px;
+	}
+
+	.slider {
+		display: none;
+	}
+
+	.educ-card {
+		width: 250px;
+    	height: 250px;
+	}
+
+	body {
+		background-position: -20px 120px;
+	}
+}
+
 @media(max-width: 700px) {
 	nav {
 		display: none;
@@ -642,4 +732,56 @@ header::before {
 	.burger-menu {
 		display: block;
 	}
+
+	#about {
+		flex-direction: column-reverse;
+	}
+
+	#about .img {
+		width: 100%;
+		min-height: 300px;
+		background-position: 0 -220px; 
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	#about div:first-of-type {
+		width: 100%;
+	}
+
+	footer > div + div {
+	    margin-left: 30px;
+	}
+}
+
+@media (max-width: 500px) {
+	#about .img {
+		background-position: 0 -160px; 
+	}
+
+	html {
+		font-size: 8px;
+	}
+
+	.educ-card {
+		margin: 10px;
+	}
+
+	footer {
+		flex-direction: column;
+	}
+
+	footer .socials {
+		margin-top: 20px;
+		margin-left: 0;
+	}
+
+	#banner img {
+    	width: 150px;
+    	margin: 40px;
+    }
+
+    body {
+    	background-size: 600px;
+    }
 }
