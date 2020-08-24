@@ -22,7 +22,7 @@ p {
 
 html {
 	font-size: 10px;
-	color: white;
+	color: #202020;
 	letter-spacing: -0.05em;
 }
 
@@ -30,7 +30,8 @@ body {
 	font-family: 'Roboto', sans-serif;
 	padding-top: 90px;
 	overflow-x: hidden;
-	background: #202020;
+	background: #fff;
+	/*background: #202020;*/
 	background-image: url(img/grid_bg.png);
 	background-position: 500px 120px;
 	background-repeat: no-repeat;
@@ -47,10 +48,10 @@ header {
 	height: 75px;
 	position: fixed;
 	z-index: 100;
-	background: #252523;
+	background: #fff;
+	/*background: #252523;*/
 	top: 0;
-	box-shadow: 0 0 10px 1px #111;
-	color: white;
+	box-shadow: 0 0 10px 1px #bbb;
 }
 
 .line-container {
@@ -127,7 +128,7 @@ nav ul a:hover {
 	display: none;
 	width: 30px;
 	height: 3px;
-	background: white;
+	background: #202020;
 	position: relative;
 	transition: all 0.3s ease;
 }
@@ -136,7 +137,7 @@ nav ul a:hover {
 	display: block;
 	width: 30px;
 	height: 3px;
-	background: white;
+	background: #202020;
 	position: absolute;
 	top: -8px;
 	transition: all 0.3s ease;
@@ -146,7 +147,7 @@ nav ul a:hover {
 	display: block;
 	width: 30px;
 	height: 3px;
-	background: white;
+	background: #202020;
 	position: absolute;
 	bottom: -8px;
 	transition: all 0.3s ease;
@@ -187,12 +188,13 @@ nav ul a:hover {
 }
 
 section {
-	background: #252523;
+	background: #fff;
+	/*background: #252523;*/
 	width: 95%;
 	max-width: 1300px;
 	padding: 50px;
 	border-radius: 10px;
-	box-shadow: -0 0 15px 0px #111;
+	box-shadow: -0 0 15px 0px #bbb;
 }
 
 section + section {
@@ -223,7 +225,7 @@ h1 {
 
 #banner img {
 	width: 200px;
-	box-shadow: -5px 8px 15px 6px #111;
+	box-shadow: -5px 8px 15px 6px #bbb;
 	transform: rotate(-45deg);
 }
 
@@ -251,6 +253,7 @@ p + p {
 	background: url("img/about.jpg");
 	width: 30%;
 	background-position: -90px -100px;
+	background-size: 600px;
 }
 
 #about h2 {
@@ -310,7 +313,7 @@ p + p {
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	background: white;
+	background: #202020;
 	margin-left: -7px;
 }
 
@@ -334,12 +337,12 @@ p + p {
 }
 
 .educ-card {
-	background: #222;
+	background: #eee;
 	width: 300px;
 	height: 300px;
 	margin: 20px;
 	position: relative;
-	box-shadow: 0 0 15px 0px #111;
+	box-shadow: 0 0 15px 0px #aaa;
 	border-radius: 30px;
 	overflow-x: hidden;
 }
@@ -348,14 +351,14 @@ p + p {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	background: #303030;
+	background: #eee;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	border-radius: 30px;
 	transition: all 0.3s ease-in-out;
 	left: 0;
-	background: #303030 url(img/pattern.png) no-repeat;
+	background: #eee url(img/pattern.png) no-repeat;
     background-position: 70px 10px;
     background-size: 75%;
 }
@@ -383,7 +386,7 @@ p + p {
 }
 
 .educ-card:first-of-type .details span {
-	color: #fff;
+	color: #202020;
 }
 
 .educ-card:nth-of-type(2) .details span {
@@ -531,7 +534,7 @@ label {
 }
 
 .parent-card > div { 
-	background: #222; 
+	background: #eee; 
 	width: 100%; 
 	height: 100%; 
 	padding: 10px; 
@@ -554,11 +557,11 @@ label {
 }
 
 footer {
-	background: #252523;
+	background: #fff;
 	width: 100%;
 	min-height: 150px;
 	margin-top: 15px;
-	box-shadow: 0 0 15px 0px #111;
+	box-shadow: 0 0 15px 0px #bbb;
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -596,7 +599,7 @@ footer > div + div {
 }
 
 .socials a:hover {
-	color: #fff;
+	color: rgb(186,47,149);
 }
 
 footer::after {
@@ -677,7 +680,7 @@ header::before {
 	}
 
 	#about .img {
-		background-position: -200px -100px;
+		background-position: -170px -100px;
 	}
 }
 
@@ -740,7 +743,7 @@ header::before {
 	#about .img {
 		width: 100%;
 		min-height: 300px;
-		background-position: 0 -220px; 
+		background-position: 0 -90px; 
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
@@ -756,7 +759,7 @@ header::before {
 
 @media (max-width: 500px) {
 	#about .img {
-		background-position: 0 -160px; 
+		background-position: 0 -20px; 
 	}
 
 	html {
@@ -784,4 +787,20 @@ header::before {
     body {
     	background-size: 600px;
     }
+
+    #skills > div > div:last-of-type p + p {
+    	margin-top: 31px;
+	}
+}
+
+@media (max-width: 395px) {
+	#skills > div > div:last-of-type p + p {
+	    margin-top: 27px;
+	}
+}
+
+@media(max-width: 375px) {
+	#skills > div > div:last-of-type {
+	    padding-left: 10px;
+	}
 }
